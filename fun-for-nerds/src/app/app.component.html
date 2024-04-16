@@ -1,1 +1,22 @@
-<h4>Fun for nerds</h4>
+<div class="container mt-4">
+  <div class="d-flex flex-column gap-2 w-50 mb-5">
+    <nav class="navbar navbar-light bg-primary-subtle justify-content-center">
+      <a class="navbar-brand ms-3 fs-4 fw-semibold" routerLink="">Fun for Nerds</a>
+    </nav>
+
+    <div class="d-flex flex-column gap-2 w-250">
+      <app-input-words></app-input-words>
+    </div>
+
+    <div class="row shadow">
+        <div class="col bg-primary">
+          <app-odd-length-words></app-odd-length-words>
+        </div>
+        <div class="col bg-secondary">
+          <app-even-length-words></app-even-length-words>
+        </div>
+    </div>
+
+
+  </div>
+</div>

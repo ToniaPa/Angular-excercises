@@ -1,1 +1,15 @@
-<p>odd-length-words works!</p>
+<p class="text-sm-center text-md-center text-lg-center text-xl-center text-wrap text-dark-50 text-decoration-underline">odd length words</p>
+
+
+<table>
+  <!-- <th>odd length word</th> -->
+  <tbody>    
+      @for (row of oddWords; track row) {
+        <tr class="text-truncate ">
+         <td>{{ row }}</td>
+        </tr>
+      }
+  </tbody>
+</table>
+
+

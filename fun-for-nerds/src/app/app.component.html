@@ -5,18 +5,16 @@
     </nav>
 
     <div class="d-flex flex-column gap-2 w-250">
-      <app-input-words></app-input-words>
+      <app-input-words (userData)="getUserInput($event)"></app-input-words>
     </div>
 
-    <div class="row shadow">
-        <div class="col bg-primary">
-          <app-odd-length-words></app-odd-length-words>
+    <div class="row">
+        <div class="col bg-light border-end ">
+          <app-odd-length-words [oddWords]="oddWords"></app-odd-length-words>          
         </div>
-        <div class="col bg-secondary">
-          <app-even-length-words></app-even-length-words>
+        <div class="col bg-light  ">
+          <app-even-length-words [evenWords]="evenWords"></app-even-length-words>          
         </div>
     </div>
-
-
   </div>
 </div>

@@ -1,0 +1,12 @@
+<p class="text-sm-center text-md-center  text-lg-center text-xl-center text-wrap text-dark-50 text-decoration-underline">even length words</p>
+
+<table>
+  <!-- <th>even length word</th> -->
+  <tbody>    
+      @for (row of evenWords; track row) {
+        <tr class="text-truncate ">
+          <td>{{ row }}</td>
+        </tr>
+      }
+  </tbody>
+</table>

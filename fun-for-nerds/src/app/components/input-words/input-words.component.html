@@ -1,0 +1,16 @@
+<div class="mt-2 mb-2 d-flex flex-row gap-2 form-group">      
+    <input type="text" class="form-control" placeholder="Type a word" name="userInsert" id="userInsert" #userInsert (input)="onUserInput($event)">   
+    <button class="btn btn-outline-primary" (click)="onSubmit()">Submit</button>
+    <button 
+        class="btn btn-outline-secondary"  
+        (click)="onReset()" >Reset</button>
+        <!-- (click)="userInsert.value = ''" -->
+        <!-- (click)="onReset()" -->
+</div>
+
+@if(userInput) { 
+    <p class="px-3 text-danger text-truncate"> {{ userInput }} </p>  
+} @else {
+    <p class="px-3 text-danger fst-italic"> Please type a word </p> 
+}
+
